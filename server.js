@@ -7,7 +7,9 @@ app.get("/",(req,res)=>
     res.send('Hello');
 });
 
-app.listen(3000,()=>
+var port = 3000;
+
+app.listen(port,()=>
 {
-    console.log('Server Is Running On Port 3000');
+    console.log(`Server Is Running On Port ${port}`);
 });
